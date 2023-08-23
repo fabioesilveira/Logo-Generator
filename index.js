@@ -1,10 +1,11 @@
 const inquirer = require("inquirer")
 const fs = require("fs")
+const{Triangle, Square, Circle} = require("./lib/shapes")
 
 const questions = [
     {
         type:"input",
-        message:"Enter text",
+        message:"Enter 3 characters text",
         name:"text"
     },
     
@@ -28,16 +29,21 @@ const questions = [
     ]
 
 
-function writeToFile(fileName, data) {}
-
-
 function init() {
     inquirer.prompt(questions)
     .then(answers=>{
-        fs.writeFileSync("./logo.svg",`${answers.text} 
-        ${answers.textColor} 
-        ${answers.shape}
-        ${answers.shapeColor}`)
+        if(answers.shape == "Circle") {
+            let shape = new Circle(answers.shapeColor, answers.text, answers.textColor)
+            fs.writeFileSync("./logo.svg",shape.render())
+        }
+        if(answers.shape == "Square") {
+            let shape = new Square(answers.shapeColor, answers.text, answers.textColor)
+            fs.writeFileSync("./logo.svg",shape.render())
+        }
+        if(answers.shape == "Triangle") {
+            let shape = new Triangle(answers.shapeColor, answers.text, answers.textColor)
+            fs.writeFileSync("./logo.svg",shape.render())
+        }
     })
 }
 
