@@ -5,17 +5,17 @@ A logo is a visual representation of a brand or company. It is a unique symbol o
 
 
 ## Installations
-Node.JS 
-Jest Version 29.6.3
+Node.JS, 
+Jest Version 29.6.3,
 Inquirer.js: Version 8.2.4
 
 
 ## Usage
-Open index.js in Integrated Terminal, type node index. Enter 3 characters text, and type the text color desired. Choose your logo's shape between TRIANGLE, SQUARE or CIRCLE, and type your shape's color desired. Your new logo is generated in logo.svg file, open with live server to check it out.
+Open index.js in Integrated Terminal, type node index. Enter 3 characters text, and type the text color desired. Choose your logo's shape between TRIANGLE, SQUARE and CIRCLE, finally type your shape's color desired. Your new logo is generated in logo.svg file, open with live server to check it out.
 
 ## Reference
 
 ![Screenshot of Deployed Website](assets/images/LogoScreenshot.png)
 
-[Walkthrough Video Demo Link]()
+[Walkthrough Video Demo Link](https://drive.google.com/file/d/151xU04hraUFK-oxxsrCbpDzok5DYjIah/view)
 
